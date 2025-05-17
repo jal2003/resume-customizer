@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic} 
+\moderncvcolor{blue} 
+
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{John}{Doe}
+\title{Resume}
+\phone[mobile]{+1~(234)~567~890}
+\email{john.doe@example.com}
+\homepage{www.johndoe.com}
+\social[linkedin]{johndoe}
+\social[github]{johndoe}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2018--2022}{B.S. in Computer Science}{University of Technology}{City}{}{GPA: 3.8/4.0}
+
+\section{Experience}
+\cventry{2022--Present}{Software Engineer}{Tech Company}{City}{}{%
+\begin{itemize}
+\item Developed and maintained key features for the company's main product
+\item Collaborated with cross-functional teams to implement new technologies
+\item Improved application performance by 30\% through code optimization
+\end{itemize}}
+
+\cventry{2020--2022}{Software Developer Intern}{Startup Inc.}{City}{}{%
+\begin{itemize}
+\item Assisted in developing new features for the web application
+\item Participated in code reviews and testing procedures
+\item Gained experience with agile development methodology
+\end{itemize}}
+
+\section{Skills}
+\cvitem{Programming}{Java, Python, JavaScript, TypeScript, C++}
+\cvitem{Web Technologies}{React, Node.js, HTML, CSS}
+\cvitem{Tools}{Git, Docker, AWS, Jenkins}
+\cvitem{Languages}{English (Native), Spanish (Intermediate)}
+
+\section{Projects}
+\cventry{}{Personal Website}{}{}{}{Developed a personal portfolio website using React and Next.js}
+\cventry{}{Inventory Management System}{}{}{}{Created a full-stack inventory management system using MERN stack}
+
+\end{document}

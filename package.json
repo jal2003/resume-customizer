@@ -1,0 +1,33 @@
+{
+  "name": "resume-generator",
+  "version": "1.0.0",
+  "description": "A tool to customize LaTeX resumes for job applications",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "resume",
+    "latex",
+    "claude",
+    "jobs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.51.0",
+    "formidable": "^3.5.4",
+    "latex.js": "^0.12.6",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.3.0"
+  }
+}
