@@ -54,13 +54,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const pdfBase64 = pdfBuffer.toString('base64');
       const pdfUrl = `data:application/pdf;base64,${pdfBase64}`;
       
-      // Return the PDF URL
-      res.status(200).json({ pdfUrl });
-    } catch (error) {
+      // Return the PDF URL and the customized LaTeX content
+      res.status(200).json({ 
+        pdfUrl,
+        latexContent: customizedResume
+      });
+    } catch (error: any) {
       console.error('Error during customization or compilation:', error);
       return res.status(500).json({ error: `Failed to process resume: ${error.message}` });
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error in API:', error);
     res.status(500).json({ error: 'Failed to process resume' });
   }
