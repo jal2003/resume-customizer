@@ -1,9 +1,5 @@
 import { Anthropic } from '@anthropic-ai/sdk';
 
-const client = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY || '',
-});
-
 export async function customizeResume(resumeContent: string, jobPosting: string) {
   const systemPrompt = `You are an expert resume customizer. Your task is to modify a LaTeX resume to better match a job posting.
   

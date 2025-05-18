@@ -45,8 +45,6 @@ npm run lint
 5. LaTeX compiler converts to PDF
 6. PDF is returned to user for download
 
-### Environment Variables
-- `ANTHROPIC_API_KEY`: Required for Claude API access
 
 ## Deployment Notes
 
